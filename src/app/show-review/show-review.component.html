@@ -1,0 +1,21 @@
+<div class="container">
+  <h2>Reviews</h2>            
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Restaurant Name</th>
+        <th>Review</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let review of reviewObjects">
+        <td>{{review.firstName}}</td>
+        <td>{{review.lastName}}</td>
+        <td>{{review.restaurantName}}</td>
+        <td>{{review.review}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,11 @@
+.panel-default > .panel-heading-custom {
+    background: #343a40; color: #fff;
+}
+
+.panel-primary {
+    border-color: #343a40;
+}
+
+.table-label-width {
+    width: 20% !important;
+}

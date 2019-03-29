@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule} from '@angular/router'
 import {AddReviewComponent} from './add-review/add-review.component'
 import { HomeComponent } from './home/home.component';
+import { ShowReviewComponent } from './show-review/show-review.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: 'addReview',
     component: AddReviewComponent
+  },
+  {
+    path: 'showReview',
+    component: ShowReviewComponent
   }
 ];
 

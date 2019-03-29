@@ -1,6 +1,83 @@
 <div class="container">
-    <div class="panel panel-primary">
-        <div class="panel-heading">Panel with panel-primary class</div>
-        <div class="panel-body">Panel Content</div>
+    <div class="panel panel-primary panel-default">
+        <div class="panel-heading panel-heading-custom">Add Your Review</div>
+        <div class="panel-body">
+        <form #addReviewForm="ngForm" (ngSubmit)= "onSubmitHandler(addReviewForm)" class="ui form" novalidate>
+            <table  class="table">
+                <tr class="form-group">
+                    <td class="table-label-width">
+                            <label for="firstName">First Name</label>
+                    </td>
+                    <td>
+                            <input class="filed" id= "firstName"name="firstName" [(ngModel)]="reviewObj.firstName" ><br>
+                    </td>
+                </tr>
+                <tr class="form-group">
+                        <td>
+                                <label for="lastName">Last Name</label>
+                        </td>
+                        <td>
+                                <input class="filed" id= "lastName" name="lastName" [(ngModel)]="reviewObj.lastName" ><br>
+                        </td>
+                    </tr>
+                    <tr class="form-group">
+                            <td>
+                                    <label for="resturantName">Restaurant Name</label>
+                            </td>
+                            <td>
+                                    <input class="filed" id= "restaurantName" name="restaurantName" [(ngModel)]="reviewObj.restaurantName" ><br>
+                            </td>
+                        </tr>
+                        <tr class="form-group">
+                                <td>
+                                        <label for="resturantName">Restaurant Address</label>
+                                </td>
+                                <td>
+                                        <input class="filed" id= "restaurantAddress" name="restaurantAddress" [(ngModel)]="reviewObj.restaurantAddress" ><br>
+                                </td>
+                            </tr>
+                            <tr class="form-group">
+                                    <td>
+                                            <label for="resturantName">Review</label>
+                                    </td>
+                                    <td>
+                                            <input class="filed" id= "review" name="review" [(ngModel)]="reviewObj.review" ><br>
+                                    </td>
+                                </tr>
+
+                            <tr>
+                                <td>
+                                        <button type="submit">Submit</button>
+                                </td>
+                            </tr>
+            </table>
+                <!-- <div class="form-group">
+                    <label for="firstName">First Name</label>
+                     <input class="filed" id= "firstName"name="firstName" [(ngModel)]="reviewObj.firstName" ><br>
+                </div> -->
+                <!-- <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input class="filed" id= "lastName" name="lastName" [(ngModel)]="reviewObj.lastName" ><br>
+                </div>
+                <div class="form-group">
+                    <label for="resturantName">Restaurant Name</label>
+                    <input class="filed" id= "restaurantName" name="restaurantName" [(ngModel)]="reviewObj.restaurantName" ><br>
+                </div>
+                <div class="form-group">
+                        <label for="resturantName">Restaurant Address</label>
+                        <input class="filed" id= "restaurantAddress" name="restaurantAddress" [(ngModel)]="reviewObj.restaurantAddress" ><br>
+                    </div>
+                <div class="form-group">
+                    <label for="resturantName">Review</label>
+                    <input class="filed" id= "review" name="review" [(ngModel)]="reviewObj.review" ><br>
+                </div> -->
+                <!-- <button type="submit">Submit</button> -->
+         </form>
+        </div>
+  
+    
+
       </div>
+
 </div>
+
